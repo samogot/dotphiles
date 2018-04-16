@@ -10,11 +10,20 @@
 # Dont read global configs
 unsetopt GLOBAL_RCS
 
-# Set the path to dotzsh.
-export DOTZSH="$HOME/.zsh"
-
-# Source environment settings
-source "$DOTZSH/env.zsh"
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 
 # Customize to your needs...
 
+export DEFAULT_USER=inayd
+export EDITOR="vim"
+
+export DONOTMODIFYPROMPT=Y
+export CRL_PATH_QT_ROOT=$HOME/Qt
+export WALDOROOT=~/waldo/trunk/source
+export PATH="$WALDOROOT/Common/bin/mac:$PATH"
+export USE_CCACHE=Y
+export CCACHE_CPP2=yes
+export CCACHE_SLOPPINESS=time_macros
+export MKBOX=Simple
+export MK_HIDE_PRAGMA_MESSAGE=Y
