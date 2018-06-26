@@ -1,28 +1,65 @@
-"
-" dotphiles : https://github.com/dotphiles/dotphiles
-"
-" Setup vim and load required plugins before dotvim
-"
-" Authors:
-"   Ben O'Hara <bohara@gmail.com>
-"
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/vim-plug'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-scriptease'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'vim-airline/vim-airline'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-glaive'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-searchindex'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-characterize'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'vim-scripts/YankRing.vim'
+Plug 'luochen1990/rainbow'
+Plug 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdcommenter'
+Plug 'wincent/Command-T'
+Plug 'jpalardy/vim-slime'
+call plug#end()
 
-" Call dotvim
-source ~/.vim/dotvim.vim
+:set number relativenumber
+:setlocal spell spelllang=ru_ru,en_us
 
-if has("user_commands")
-  set nocompatible
-  filetype off
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
-  "let g:vundles=['general', 'git', 'hg', 'programming', 'completion', 'ruby', 'python', 'misc']
-  let g:vundles=['general', 'programming']
-  let g:neocomplcache_enable_at_startup = 1
-  " Load 'vundles'
-  source ~/.vim/vundles.vim
-  " Add extra bundles here...
-  " Bundle 'reponame'
-endif
+set ttymouse=xterm2
+set mouse=a
 
-" Customize to your needs...
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline_powerline_fonts = 1
 
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer yapf
+  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+augroup END
+
+" Disable arrow keys
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+au FocusLost * :wa
+
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": split($TMUX, ",")[0], "target_pane": ":.2"}

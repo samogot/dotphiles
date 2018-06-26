@@ -10,9 +10,6 @@
 [submodule "dotsync"]
 	path = dotsync
 	url = https://github.com/dotphiles/dotsync.git
-[submodule "vim/dotvim"]
-	path = vim/dotvim
-	url = https://github.com/dotphiles/dotvim.git
 [submodule "zsh/oh-my-zsh"]
 	path = zsh/oh-my-zsh
 	url = git@github.com:robbyrussell/oh-my-zsh.git
@@ -49,3 +46,6 @@
 [submodule "tmux/dottmux/plugins/tmux-better-mouse-mode"]
 	path = tmux/dottmux/plugins/tmux-better-mouse-mode
 	url = git@github.com:nhdaly/tmux-better-mouse-mode.git
+[submodule "tmux/dottmux/plugins/vim-tmux-navigator"]
+	path = tmux/dottmux/plugins/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git

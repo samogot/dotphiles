@@ -26,4 +26,5 @@ export USE_CCACHE=Y
 export CCACHE_CPP2=yes
 export CCACHE_SLOPPINESS=time_macros
 export MKBOX=Simple
+export MKTYPE=DEBUG
 export MK_HIDE_PRAGMA_MESSAGE=Y
