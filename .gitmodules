@@ -25,27 +25,3 @@
 [submodule "tmux/dottmux/plugins/tpm"]
 	path = tmux/dottmux/plugins/tpm
 	url = git@github.com:tmux-plugins/tpm.git
-[submodule "tmux/dottmux/plugins/tmux-copycat"]
-	path = tmux/dottmux/plugins/tmux-copycat
-	url = git@github.com:tmux-plugins/tmux-copycat.git
-[submodule "tmux/dottmux/plugins/tmux-open"]
-	path = tmux/dottmux/plugins/tmux-open
-	url = git@github.com:tmux-plugins/tmux-open.git
-[submodule "tmux/dottmux/plugins/tmux-pain-control"]
-	path = tmux/dottmux/plugins/tmux-pain-control
-	url = git@github.com:tmux-plugins/tmux-pain-control.git
-[submodule "tmux/dottmux/plugins/tmux-sensible"]
-	path = tmux/dottmux/plugins/tmux-sensible
-	url = git@github.com:tmux-plugins/tmux-sensible.git
-[submodule "tmux/dottmux/plugins/tmux-yank"]
-	path = tmux/dottmux/plugins/tmux-yank
-	url = git@github.com:tmux-plugins/tmux-yank.git
-[submodule "tmux/dottmux/plugins/tmux-powerline-theme"]
-	path = tmux/dottmux/plugins/tmux-powerline-theme
-	url = git@github.com:jooize/tmux-powerline-theme.git
-[submodule "tmux/dottmux/plugins/tmux-better-mouse-mode"]
-	path = tmux/dottmux/plugins/tmux-better-mouse-mode
-	url = git@github.com:nhdaly/tmux-better-mouse-mode.git
-[submodule "tmux/dottmux/plugins/vim-tmux-navigator"]
-	path = tmux/dottmux/plugins/vim-tmux-navigator
-	url = git@github.com:christoomey/vim-tmux-navigator.git

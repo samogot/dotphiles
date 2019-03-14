@@ -19,12 +19,18 @@ export DEFAULT_USER=inayd
 export EDITOR="vim"
 
 export DONOTMODIFYPROMPT=Y
-export CRL_PATH_QT_ROOT=$HOME/Qt
-export WALDOROOT=~/waldo/trunk/source
+export WALDOROOT=~/waldo/source
 export PATH="$WALDOROOT/Common/bin/mac:$PATH"
 export USE_CCACHE=Y
 export CCACHE_CPP2=yes
 export CCACHE_SLOPPINESS=time_macros
-export MKBOX=Simple
+export MKBOX=CDGSMac
 export MKTYPE=DEBUG
 export MK_HIDE_PRAGMA_MESSAGE=Y
+
+if command -v xcrun >/dev/null; then
+  export SDKROOT=$(xcrun --show-sdk-path)
+fi
+
+uname -a | grep -qi darwin && export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:/usr/local/opt/grep/libexec/gnubin:$PATH"
+export PATH=$HOME/.dotfiles/bin:$PATH

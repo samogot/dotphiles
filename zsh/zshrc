@@ -50,7 +50,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs command_execution_time time)
 
 # Zsh tmux plugin customization
-ZSH_TMUX_AUTOSTART="true"
+[[ -v __INTELLIJ_COMMAND_HISTFILE__ ]] || ZSH_TMUX_AUTOSTART="true"
 
 # Force tmux utf8
 ZSH_TMUX_UTF8="true"
@@ -97,6 +97,3 @@ export KEYTIMEOUT=1
 alias gr='git reset'
 alias grh='git reset --hard'
 alias grs='git reset --soft'
-
-
-

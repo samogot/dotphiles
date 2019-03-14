@@ -24,7 +24,7 @@ dotsyncrc
 #git/gitattributes
 #git/tigrc
 #git/gitk
-#ssh
+ssh
 tmux/tmux.conf
 tmux/dottmux:.tmux
 #tmux/tmuxinator
@@ -43,7 +43,7 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-mac124                           git=ANY
+macbook8073                      git=ANY
 #host1.example.com               git=ANY                        files=custom/dotfile    #git repo, pull from anywhere and link a custom dotfile
 #host2.example.com               git=ANY                                                #git repo, pull from anywhere
 #host3.example.com               git=ANY                                                #git repo, pull from anywhere

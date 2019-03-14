@@ -30,7 +30,7 @@ Installation
 
   2. Clone your fork.
 
-     `git clone --recursive git@github.com:*username*/dotphiles.git ~/.dotfiles`
+     `git clone --recursive git@github.com:samogot/dotphiles.git ~/.dotfiles`
 
   3. Setup your terminal and the dotfiles you want to use, see below.
 
@@ -212,4 +212,3 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [5]: https://github.com/chriskempson/base16
 [6]: https://github.com/Lokaltog/powerline-fonts
 [7]: https://github.com/dotphiles/dotphiles/graphs/contributors
-
